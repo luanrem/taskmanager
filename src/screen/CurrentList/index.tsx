@@ -1,9 +1,12 @@
 import { Container } from "./styles";
+import { TaskContent } from "./TaskContent";
+import { TasksList } from "./TasksList";
 
 export function CurrentList() {
     return (
         <Container>
-            <div>CurrentList</div>
+            <TasksList />
+            <TaskContent />
         </Container>
     )
 }
