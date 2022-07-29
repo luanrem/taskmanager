@@ -1,11 +1,17 @@
-import { Stack } from '@mui/material'
-import { Container, ButtonMenu } from './styles'
+import {
+  AccordionDetails,
+  AccordionSummary,
+  Stack,
+  Typography,
+} from '@mui/material'
+import { Container, ButtonMenu, AccordionList } from './styles'
 
 import {
   BsFillCalendar3RangeFill,
   BsFillCalendarDateFill,
   BsFillInboxFill,
 } from 'react-icons/bs'
+import { MdOutlineExpandMore } from 'react-icons/md'
 
 export function Lists() {
   return (
@@ -22,6 +28,7 @@ export function Lists() {
         alignItems="center"
         spacing={1}
       >
+        {/* // TODO disable uppercase */}
         <ButtonMenu>
           <BsFillCalendarDateFill />
           <div>
@@ -45,6 +52,26 @@ export function Lists() {
         </ButtonMenu>
       </Stack>
       <hr />
+      <Typography>Lists</Typography>
+      {/* // TODO customize the Accordion */}
+      <div className="accordionProperties">
+        <AccordionList elevation={0} square>
+          <AccordionSummary
+            expandIcon={<MdOutlineExpandMore />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography>Accordion 1</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+              eget.
+            </Typography>
+          </AccordionDetails>
+        </AccordionList>
+      </div>
     </Container>
   )
 }

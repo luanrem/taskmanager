@@ -1,6 +1,7 @@
-import { Button, ButtonProps } from '@mui/material'
+import { Accordion, Button } from '@mui/material'
 import { ResizableBox } from 'react-resizable'
 import styled from 'styled-components'
+// import { styled as muiStyled } from '@mui/material/styles'
 
 export const Container = styled(ResizableBox).attrs({
   resizeHandles: ['e'],
@@ -17,9 +18,12 @@ export const Container = styled(ResizableBox).attrs({
   hr {
     width: 100%;
   }
+  .accordionProperties.MuiAccordion-root.Mui-expanded {
+    margin: 0;
+  }
 `
 
-export const ButtonMenu = styled(Button)<ButtonProps>`
+export const ButtonMenu = styled(Button)`
   width: 90%;
   && {
     color: white;
@@ -40,5 +44,25 @@ export const ButtonMenu = styled(Button)<ButtonProps>`
     &:hover {
       background-color: rgb(255, 255, 255, 0.1);
     }
+  }
+`
+export const AccordionList = styled(Accordion)`
+  &:before {
+    display: none;
+  }
+  & .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+    transform: rotate(-90deg);
+  }
+  & .MuiAccordionSummary-root {
+    flex-direction: row-reverse;
+    .MuiAccordionSummary-expandIconWrapper {
+      color: white;
+    }
+  }
+  && {
+    min-height: 3rem;
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
   }
 `
