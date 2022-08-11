@@ -4,7 +4,7 @@ import {
   Stack,
   Typography,
 } from '@mui/material'
-import { Container, ButtonMenu, AccordionList } from './styles'
+import { Container, ButtonMenu, AccordionList, TaskButton } from './styles'
 
 import {
   BsFillCalendar3RangeFill,
@@ -12,6 +12,8 @@ import {
   BsFillInboxFill,
 } from 'react-icons/bs'
 import { MdOutlineExpandMore } from 'react-icons/md'
+import FolderList from '../../components/FolderList'
+import List from '../../mock.ts'
 
 export function Lists() {
   return (
@@ -54,24 +56,15 @@ export function Lists() {
       <hr />
       <Typography>Lists</Typography>
       {/* // TODO customize the Accordion */}
-      <div className="accordionProperties">
-        <AccordionList elevation={0} square>
-          <AccordionSummary
-            expandIcon={<MdOutlineExpandMore />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
-            <Typography>Accordion 1</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
-            </Typography>
-          </AccordionDetails>
-        </AccordionList>
-      </div>
+      <FolderList>
+        <TaskButton>
+          <BsFillCalendar3RangeFill />
+          <p>Lista de afazeres</p>
+        </TaskButton>
+        <Typography>Teste second list</Typography>
+        <Typography>Teste second list</Typography>
+        <Typography>Teste second list</Typography>
+      </FolderList>
     </Container>
   )
 }

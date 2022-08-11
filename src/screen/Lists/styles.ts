@@ -18,9 +18,6 @@ export const Container = styled(ResizableBox).attrs({
   hr {
     width: 100%;
   }
-  .accordionProperties.MuiAccordion-root.Mui-expanded {
-    margin: 0;
-  }
 `
 
 export const ButtonMenu = styled(Button)`
@@ -50,19 +47,34 @@ export const AccordionList = styled(Accordion)`
   &:before {
     display: none;
   }
-  & .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  & .MuiAccordionSummary-expandIconWrapper {
     transform: rotate(-90deg);
+  }
+  & .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+    transform: rotate(0deg);
   }
   & .MuiAccordionSummary-root {
     flex-direction: row-reverse;
+    min-height: 2rem;
+    height: 2rem;
+
     .MuiAccordionSummary-expandIconWrapper {
       color: white;
     }
   }
   && {
-    min-height: 3rem;
     background-color: transparent;
     box-shadow: none;
     color: white;
+    margin: 0;
+    .MuiButtonBase-root.MuiAccordionSummary-root.Mui-expanded {
+      min-height: 2rem;
+    }
   }
+  &&.MuiAccordion-root {
+    margin: 0;
+  }
+`
+export const TaskButton = styled(Button)`
+  display: flex;
 `
