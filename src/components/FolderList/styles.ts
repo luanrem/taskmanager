@@ -1,7 +1,19 @@
 import styled from 'styled-components'
 import { Accordion } from '@mui/material'
 
-export const Container = styled.div``
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .accordionButton {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    justify-content: start;
+    align-items: center;
+  }
+`
 
 export const AccordionList = styled(Accordion)`
   &:before {
@@ -14,9 +26,10 @@ export const AccordionList = styled(Accordion)`
     transform: rotate(0deg);
   }
   & .MuiAccordionSummary-root {
+    background-color: red;
     flex-direction: row-reverse;
-    min-height: 2rem;
-    height: 2rem;
+    min-height: 0.1rem;
+    height: 0.1rem;
 
     .MuiAccordionSummary-expandIconWrapper {
       color: white;
@@ -28,7 +41,7 @@ export const AccordionList = styled(Accordion)`
     color: white;
     margin: 0;
     .MuiButtonBase-root.MuiAccordionSummary-root.Mui-expanded {
-      min-height: 2rem;
+      min-height: 0.1rem;
     }
   }
   &&.MuiAccordion-root {
