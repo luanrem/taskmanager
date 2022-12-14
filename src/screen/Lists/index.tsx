@@ -1,19 +1,14 @@
-import {
-  AccordionDetails,
-  AccordionSummary,
-  Stack,
-  Typography,
-} from '@mui/material'
-import { Container, ButtonMenu, AccordionList, TaskButton } from './styles'
+import { Stack, Typography } from '@mui/material'
+import { Container, ButtonMenu, TaskButton } from './styles'
 
 import {
   BsFillCalendar3RangeFill,
   BsFillCalendarDateFill,
   BsFillInboxFill,
 } from 'react-icons/bs'
-import { MdOutlineExpandMore } from 'react-icons/md'
 import FolderList from '../../components/FolderList'
-import List from '../../mock.ts'
+// import List from '../../mock.ts'
+import ListOfTaskButton from '../../components/ListOfTaskButton'
 
 export function Lists() {
   return (
@@ -61,6 +56,7 @@ export function Lists() {
           <BsFillCalendar3RangeFill />
           <p>Lista de afazeres</p>
         </TaskButton>
+        <ListOfTaskButton>Lista 2</ListOfTaskButton>
         <Typography>Teste second list</Typography>
         <Typography>Teste second list</Typography>
         <Typography>Teste second list</Typography>
