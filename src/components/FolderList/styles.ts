@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import styled, { css } from 'styled-components'
 import { Accordion } from '@mui/material'
 
@@ -17,6 +18,15 @@ export const Container = styled.div`
     justify-content: start;
     align-items: center;
   }
+
+  .buttonLabel {
+    box-shadow: none;
+    text-transform: none;
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    color: white;
+  }
 `
 
 export const AccordionButton = styled.div<AccordionProps>`
@@ -30,7 +40,7 @@ export const AccordionButton = styled.div<AccordionProps>`
     color: white;
     transition: 300ms ease all;
     transform: ${props =>
-      props.expanded ? css`rotate(0deg)` : css`rotate(-90deg)`};
+    props.expanded ? css`rotate(0deg)` : css`rotate(-90deg)`};
   }
 `
 
