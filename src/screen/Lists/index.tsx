@@ -57,6 +57,13 @@ export function Lists() {
         <ListOfTaskButton>Lista 2</ListOfTaskButton>
         <ListOfTaskButton>Lista 2</ListOfTaskButton>
       </FolderList>
+      <FolderList title="Accordion">
+        <ListOfTaskButton>Lista 2</ListOfTaskButton>
+        <ListOfTaskButton>Lista 2</ListOfTaskButton>
+        <ListOfTaskButton>Lista 2</ListOfTaskButton>
+        <ListOfTaskButton>Lista 2</ListOfTaskButton>
+        <ListOfTaskButton>Lista 2</ListOfTaskButton>
+      </FolderList>
     </Container>
   )
 }
