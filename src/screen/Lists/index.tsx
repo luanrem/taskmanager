@@ -1,5 +1,5 @@
 import { Stack, Typography } from '@mui/material'
-import { Container, ButtonMenu, TaskButton } from './styles'
+import { Container, ButtonMenu } from './styles'
 
 import {
   BsFillCalendar3RangeFill,
@@ -50,16 +50,12 @@ export function Lists() {
       </Stack>
       <hr />
       <Typography>Lists</Typography>
-      {/* // TODO customize the Accordion */}
-      <FolderList>
-        <TaskButton>
-          <BsFillCalendar3RangeFill />
-          <p>Lista de afazeres</p>
-        </TaskButton>
+      <FolderList title="Accordion">
         <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <Typography>Teste second list</Typography>
-        <Typography>Teste second list</Typography>
-        <Typography>Teste second list</Typography>
+        <ListOfTaskButton>Lista 2</ListOfTaskButton>
+        <ListOfTaskButton>Lista 2</ListOfTaskButton>
+        <ListOfTaskButton>Lista 2</ListOfTaskButton>
+        <ListOfTaskButton>Lista 2</ListOfTaskButton>
       </FolderList>
     </Container>
   )

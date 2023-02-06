@@ -8,7 +8,6 @@ export default function ListOfTaskButton(props: PropsWithChildren<any>) {
   return (
     <Container>
       <TaskButton>
-        <BsFillCalendar3RangeFill />
         <Typography>{props.children}</Typography>
       </TaskButton>
     </Container>

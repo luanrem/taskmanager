@@ -31,7 +31,7 @@ export default function FolderList(props: PropsWithChildren<any>) {
           <MdOutlineExpandMore />
         </IconButton>
         <Button className="buttonLabel">
-          <Typography>Accordion 1</Typography>
+          <Typography>{props.title}</Typography>
         </Button>
       </AccordionButton>
       <AccordionList expanded={accordionOpened} elevation={0} square>

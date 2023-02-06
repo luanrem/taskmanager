@@ -74,5 +74,6 @@ export const AccordionList = styled(Accordion)`
   }
   &&.MuiAccordion-root {
     margin: 0;
+    width: 100%;
   }
 `
