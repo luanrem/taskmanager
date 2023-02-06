@@ -17,9 +17,16 @@ export default function FolderList(props: PropsWithChildren<any>) {
     setAccordionOpened(!accordionOpened)
   }
 
+  function handleJustOpenAccordion() {
+    !accordionOpened && setAccordionOpened(!accordionOpened)
+  }
+
   return (
     <Container>
-      <AccordionButton expanded={accordionOpened}>
+      <AccordionButton
+        expanded={accordionOpened}
+        onClick={handleJustOpenAccordion}
+      >
         <IconButton
           edge="start"
           color="primary"
