@@ -78,3 +78,16 @@ export const AccordionList = styled(Accordion)`
 export const TaskButton = styled(Button)`
   display: flex;
 `
+
+export const ContentDivider = styled.hr`
+  color: white;
+  border: 0;
+  height: 0.5px;
+  margin: 0.5rem 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+`
