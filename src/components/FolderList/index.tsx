@@ -7,6 +7,7 @@ import {
 } from '@mui/material'
 import { PropsWithChildren, useState } from 'react'
 import { MdOutlineExpandMore } from 'react-icons/md'
+import { TbDots } from 'react-icons/tb'
 
 import { AccordionButton, AccordionList, Container } from './styles'
 
@@ -35,11 +36,19 @@ export default function FolderList(props: PropsWithChildren<any>) {
           onClick={handleOpenAccordion}
         >
           {/* <input hidden accept="image/*" type="file" /> */}
-          <MdOutlineExpandMore />
+          <MdOutlineExpandMore className="expandButton" />
         </IconButton>
         <Button className="buttonLabel">
           <Typography>{props.title}</Typography>
         </Button>
+        <IconButton
+          edge="end"
+          color="primary"
+          aria-label="open accordion"
+          size="small"
+        >
+          <TbDots />
+        </IconButton>
       </AccordionButton>
       <AccordionList expanded={accordionOpened} elevation={0} square>
         <AccordionSummary

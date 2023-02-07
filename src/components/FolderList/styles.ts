@@ -11,13 +11,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  .accordionButton {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 10% 90%;
-    justify-content: start;
-    align-items: center;
-  }
 
   .buttonLabel {
     box-shadow: none;
@@ -32,12 +25,15 @@ export const Container = styled.div`
 export const AccordionButton = styled.div<AccordionProps>`
   width: 100%;
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 10% 80% 10%;
   justify-content: start;
   align-items: center;
 
   svg {
     color: white;
+  }
+
+  .expandButton {
     transition: 300ms ease all;
     transform: ${props =>
     props.expanded ? css`rotate(0deg)` : css`rotate(-90deg)`};
