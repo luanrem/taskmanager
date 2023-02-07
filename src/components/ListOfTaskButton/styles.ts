@@ -17,6 +17,13 @@ export const Container = styled.div`
   .MuiTypography-root {
     font-size: 1.05em;
   }
+
+  .detailsButton {
+    padding: 0 0.3rem;
+    svg {
+      color: white;
+    }
+  }
 `
 export const TaskButton = styled(Button)`
   display: flex;
