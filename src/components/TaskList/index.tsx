@@ -4,7 +4,7 @@ import { TbDots } from 'react-icons/tb'
 
 import { Container, TaskButton } from './styles'
 
-export default function ListOfTaskButton(props: PropsWithChildren<any>) {
+export default function TaskList(props: PropsWithChildren<any>) {
   return (
     <Container>
       <TaskButton>

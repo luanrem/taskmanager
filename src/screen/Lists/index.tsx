@@ -8,7 +8,7 @@ import {
 } from 'react-icons/bs'
 import FolderList from '../../components/FolderList'
 // import List from '../../mock.ts'
-import ListOfTaskButton from '../../components/ListOfTaskButton'
+import TaskList from '../../components/TaskList'
 
 export function Lists() {
   return (
@@ -51,34 +51,34 @@ export function Lists() {
       <hr />
       <Typography>Lists</Typography>
       <FolderList title="Accordion">
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
       </FolderList>
       <FolderList title="Accordion">
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
       </FolderList>
       <ContentDivider />
       <Typography>Lists</Typography>
       <FolderList title="Accordion">
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
       </FolderList>
       <FolderList title="Accordion">
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
-        <ListOfTaskButton>Lista 2</ListOfTaskButton>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
+        <TaskList>Lista 2</TaskList>
       </FolderList>
     </Container>
   )
