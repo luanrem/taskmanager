@@ -24,10 +24,7 @@ export default function FolderList(props: PropsWithChildren<any>) {
 
   return (
     <Container>
-      <AccordionButton
-        expanded={accordionOpened}
-        onClick={handleJustOpenAccordion}
-      >
+      <AccordionButton expanded={accordionOpened}>
         <IconButton
           edge="start"
           color="primary"
@@ -38,7 +35,7 @@ export default function FolderList(props: PropsWithChildren<any>) {
           {/* <input hidden accept="image/*" type="file" /> */}
           <MdOutlineExpandMore className="expandButton" />
         </IconButton>
-        <Button className="buttonLabel">
+        <Button className="buttonLabel" onClick={handleJustOpenAccordion}>
           <Typography>{props.title}</Typography>
         </Button>
         <IconButton
