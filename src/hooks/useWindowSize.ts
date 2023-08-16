@@ -10,12 +10,12 @@ interface UseWindowSizeOptions {
 }
 
 export function useWindowSize({
-  watch = true
+  watch = true,
 }: UseWindowSizeOptions): WindowSize {
   function getSize() {
     return {
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
     }
   }
 
